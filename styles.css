@@ -247,7 +247,7 @@ form {
   width: 100%;
   max-width: 230px;
   background: #0007;
-  padding: var(--i-padding) calc(var(--i-padding) + 1rem);
+  padding: var(--i-padding);
   color: #fff;
   border: unset;
   border-radius: var(--btn-radius);
