@@ -16,7 +16,7 @@ body {
   margin: 0 var(--o-padding);
   font-family: var(--font);
   color: black;
-  background-color: white;
+  background: linear-gradient(0deg, #c5c5c5, #f5f5f5);
   display: flex;
   justify-content: center;
   align-items: center;
