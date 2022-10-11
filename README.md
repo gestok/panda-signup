@@ -1,3 +1,4 @@
-# panda-signup
+# Panda Member Sign Up Card
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-nguex4)
+Made for Odin Project: Sign-up Form.<br/>
+If you liked it, please upvote it!
