@@ -8,6 +8,7 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
 }
@@ -16,9 +17,23 @@ body {
   margin: 0 var(--o-padding);
   font-family: var(--font);
   color: black;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#c5c5c5),
+    to(#f5f5f5)
+  );
+  background: -o-linear-gradient(bottom, #c5c5c5, #f5f5f5);
   background: linear-gradient(0deg, #c5c5c5, #f5f5f5);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 100vh;
 }
@@ -32,7 +47,10 @@ body {
   overflow: hidden;
   position: relative;
   border-radius: var(--radius);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 10px 1rem #0004;
   box-shadow: 0 10px 1rem #0004;
 }
 
@@ -49,28 +67,51 @@ body {
 .brand {
   width: 40%;
   padding: var(--i-padding);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: end;
   position: relative;
 }
 
 .brand .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   pointer-events: none;
   position: absolute;
   left: 49%;
   top: 5rem;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 .brand .logo h1 {
   color: #392f32;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   font-size: 34px;
   font-weight: 400;
@@ -78,7 +119,11 @@ body {
 }
 .brand .logo .name {
   padding-left: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 20px;
   letter-spacing: 12px;
@@ -92,6 +137,8 @@ body {
   color: #fffa;
 }
 .brand .copyright a {
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
   color: #fffa;
 }
@@ -101,10 +148,13 @@ body {
 
 .formWrapper {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: var(--o-padding);
   background: #fff1;
   border-left: solid 1px #0001;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
@@ -112,7 +162,12 @@ body {
   width: 100%;
   max-width: 504px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: var(--o-padding);
 }
@@ -126,6 +181,7 @@ body {
 }
 
 form {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: calc(var(--i-padding) + 6px);
@@ -133,6 +189,8 @@ form {
 }
 
 .inputWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -155,9 +213,18 @@ form {
   position: absolute;
   left: calc(1rem - 4px);
   top: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
   transform-origin: left;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -167,6 +234,8 @@ form {
   text-shadow: 0 1px 4px #0009;
   top: -14px;
   left: 11px;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
   transform: scale(0.8);
 }
 
@@ -180,6 +249,8 @@ form {
   border: unset;
   border-radius: var(--btn-radius);
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 #register:hover {
@@ -200,6 +271,7 @@ form {
 
 @media (max-width: 860px) {
   .container {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .container .brand,
