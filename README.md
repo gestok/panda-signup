@@ -10,5 +10,5 @@ This was made for The Odin Project: [Sign-up Form](https://www.theodinproject.co
 If you liked it, please upvote it!
 
 ## Showcase
-[Live Demo](https://panda-signup.netlify.app/)
+[Live Demo](https://panda-signup.netlify.app/)<br/>
 [Codepen](https://codepen.io/gestok/pen/KKRbPvb)
